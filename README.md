@@ -1,13 +1,13 @@
-# Landing PT — Lorenzo Abati
+# LorenzoAbatiPt
 
-Landing page statica e responsive per personal trainer, realizzata con HTML, CSS e JavaScript puro.
+Landing page ufficiale di Lorenzo Abati, personal trainer. Sito statico e responsive realizzato con HTML, CSS e JavaScript puro.
 
 ## Struttura
 
 - `index.html` — contenuti e struttura della pagina
 - `styles.css` — layout, responsive design e animazioni
 - `script.js` — reveal allo scroll, contatori e micro-interazioni
-- `assets/` — immagine ottimizzata della hero
+- `assets/` — fotografie ottimizzate per il sito
 
 ## Avvio locale
 
