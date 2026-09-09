@@ -5,7 +5,6 @@
   --line: rgba(241, 240, 233, 0.17);
   --acid: #c8ff26;
   --acid-dark: #9bc800;
-  --acid-on-light: #506600;
   --display: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   --body: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --page-pad: clamp(1.25rem, 4vw, 4.5rem);
@@ -477,9 +476,12 @@ img {
   font-style: normal;
 }
 
-.method .section-heading h2 em,
+.method .section-heading h2 em {
+  color: var(--ink);
+}
+
 .programs .section-heading h2 em {
-  color: var(--acid-on-light);
+  color: var(--acid);
 }
 
 .method {
@@ -487,9 +489,12 @@ img {
   color: var(--ink);
 }
 
-.method .eyebrow,
+.method .eyebrow {
+  color: var(--ink);
+}
+
 .programs .eyebrow {
-  color: #597200;
+  color: var(--acid);
 }
 
 .method-grid {
