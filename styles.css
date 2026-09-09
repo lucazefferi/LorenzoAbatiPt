@@ -1055,7 +1055,7 @@ footer p:last-child { justify-self: end; }
 
   .method-grid,
   .progress-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .method-intro { max-width: 40rem; }
@@ -1120,6 +1120,18 @@ footer p:last-child { justify-self: end; }
   .section-heading h2,
   .progress-copy h2 { font-size: clamp(3.4rem, 16vw, 6rem); }
 
+  .progress-layout,
+  .progress-copy,
+  .metric-panel {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .progress-copy h2 {
+    font-size: clamp(2.35rem, 11.6vw, 4.75rem);
+    letter-spacing: -0.075em;
+  }
+
   .method-grid { gap: 3rem; }
   .step { grid-template-columns: 2.2rem 1fr auto; }
 
@@ -1134,7 +1146,20 @@ footer p:last-child { justify-self: end; }
   .program-card:last-child { grid-column: auto; min-height: 26rem; }
 
   .progress-layout { gap: 3rem; }
-  .metric-panel { width: 100%; }
+  .metric-panel {
+    width: 100%;
+    padding: 1.35rem;
+  }
+
+  .metric-head {
+    gap: 1rem;
+    font-size: 0.66rem;
+  }
+
+  .metric-head strong {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
 
   .contact { min-height: 100svh; }
   .contact h2 { font-size: clamp(4rem, 19vw, 7rem); }
